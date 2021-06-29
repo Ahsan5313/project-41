@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+html{
+
+    scroll-behavior: smooth;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Kirang Haerang', cursive;
+}
+body{
+
+    font-family: 'Kirang Haerang', cursive;
+}
+.navbar{
+
+    padding: 30px 0;
+    font-size: 20px;
+}
+.nav-item{
+
+    padding: 0 6px;
+   
+
+}
+.navbar .nav-item .nav-link:hover{
+
+    border: 2px solid red;
+
+    border-bottom-left-radius: 0% 0% 0% 0%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    transition:  1s ease;
+ 
+}
+/* hero section start from here */
+#hero{
+
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #000;
+    background-image: url('/images/pic3.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.hero-heading{
+
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+}
+#hero a{
+
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+/* hero section end here */
+
+
+/* causes section start from here  */
+
+#causes{
+
+    text-align: center;
+    
+}
+#causes i{
+
+    background-color: rgba(255, 0, 0, 1);
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+    transform: translate();
+}
+
+
+/* causes section end here  */
+
+/* photo gallery section start from here  */
+
+#photo-gallery,.middle{
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* photo gallery section end from here  */
+
+/* about section start from here */
+#about i{
+
+    color: #B12711;
+    border: 1px solid #B12711;
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 50%;
+}
+#about i:hover{
+
+    background: #B12711;
+    color: white;
+}
+#about a{
+
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+/* about section end here */
+
+/* team section start form here */
+#team h3{
+
+    font-weight: bolder;
+}
+.bound{
+
+    width: 280px;
+    position: relative;
+    height: 400px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.bound .img-bound{
+
+    background: #000;
+    clip-path: circle(400px at center 100px);
+    transition: .5s;
+    transition-delay: .5s;
+
+}
+.bound:hover .img-bound{
+
+    clip-path: circle(80px at center 100px);
+    transition-delay: 0s;
+}
+.bound .img-bound img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bound .content{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.bound .content h2{
+
+    margin: 0;
+    padding: 0;
+
+}
+.bound .content h2, .bound .content p{
+
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(20px);
+}
+.bound:hover .content{
+
+    opacity: 1;
+    margin-bottom: 10px;
+    transform: translateY(0);
+    transition-delay: .5s;
+}
+.bound:hover .content p{
+
+    opacity: 1;
+    transition-delay: .5s;
+    transform: translateY(0);
+}
+
+/* team section end here */
+
+/* blog section start from here*/
+
+.ribbon{
+    width: 90px;
+    height: 90px;
+    margin: -10px auto;
+    background: #f0d803;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.ribbon::before{
+
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-left: 75px solid #f0d803;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.ribbon::after{
+
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-right: 75px solid #f0d803;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.text{
+
+    text-align: center;
+    
+}
+.btn-color{
+
+    background: #f0d803;
+}
+
+/* blog section end here*/
+
+/* project section start from here */
+
+#project{
+
+    position: relative;
+    background-image: url('/images/header.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+.img-overlay{
+
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#project b{
+
+    font-size: 40px;
+}
+
+/* project section end here */
+
+/* contact section start form here */
+
+#contact .info{
+
+    padding: 20px 40px;
+    background: #f0d803;
+    color: #000;
+    text-align: center;
+    border: 1px solid #fff;
+    
+}
+
+
+#contact .info h4{
+
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+#contact .info p{
+
+    font-size: 15px;
+}
+
+/* contact section end here */
+
+/* footer section start form here */
+
+#footer .social{
+
+    display: flex;
+    width: 20px;
+    justify-content: space-between;
+    list-style-type: none;
+   
+}
+.social .list-item{
+
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+
+    
+}
+#myBtn{
+
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#myBtn:hover{
+
+    background: gray;
+}
+
+/* footer section end here */
+
+
